@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="es.android.eabolsa.searchabletick"
+        android:versionCode="2"
+        android:versionName="2.0">
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application android:label="@string/app_name"
+                 android:icon="@drawable/icon">
+        
+        <activity android:name="SearchableTickers" android:label="@string/app_name"
+        		  android:theme="@android:style/Theme.NoTitleBar"
+        		  android:configChanges="orientation|keyboardHidden"
+        		  >
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- Receives the search request. -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+                <!-- No category needed, because the Intent will specify this class component-->
+            </intent-filter>
+
+            <!-- Points to searchable meta data. -->
+            <meta-data android:name="android.app.searchable"
+                       android:resource="@xml/searchable" />
+
+        </activity>
+        
+        <activity android:name=".VistaDetalle"
+				  android:theme="@android:style/Theme.NoTitleBar" 
+				  android:screenOrientation="landscape"/>
+
+
+				  
+        <!-- Provides search suggestions for words and their definitions. -->
+        <provider android:name=".TickerProvider"
+                  android:authorities="es.android.eabolsa.searchabletick.TickerProvider" />
+                  
+        <!-- Points to searchable activity so the whole app can invoke search. -->
+        <meta-data android:name="android.app.default_searchable"
+                   android:value=".SearchableDictionary" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    
+</manifest>

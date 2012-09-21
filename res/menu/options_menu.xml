@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/search" android:title="@string/menu_search"
+		android:icon="@drawable/icon_add" />
+	<item android:id="@+id/Menu_orden" android:title="Ordenar"
+		android:icon="@drawable/icon_orden">
+		<menu>
+			<item android:id="@+id/SubMnu_mayor" android:title=" Top mayor cambio" />
+			<item android:id="@+id/SubMnu_menor" android:title=" Top menor cambio" />
+			<item android:id="@+id/SubMnu_defecto" android:title=" Defecto" />
+		</menu>
+	</item>
+	<item android:id="@+id/Menu_refresh" android:title="Refrescar"
+		android:icon="@drawable/icon_refresh" />
+</menu>

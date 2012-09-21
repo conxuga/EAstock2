@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ScrollView
+android:id="@+id/widgetscroll"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@color/blanco"
+	android:scrollbarAlwaysDrawVerticalTrack="true">	
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:paddingBottom="10px"
+		android:paddingLeft="5px"
+		android:paddingRight="5px"
+		android:paddingTop="5px">
+		<TextView android:id="@+id/v_nombre_valor"
+			android:layout_width="220dip"
+			android:layout_height="wrap_content"
+			android:minWidth="220dip"
+			android:textSize="30px"
+            android:textStyle="bold"
+            android:textColor="#0B3861"/>
+		<TextView android:id="@+id/v_cambio_valor"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textSize="30px"
+            android:textStyle="bold"
+			/>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:paddingBottom="5px"
+		android:paddingLeft="10px"
+		android:paddingRight="10px">
+		<TextView android:text="COTIZACION" 
+			android:layout_width="220dip"
+			android:layout_height="wrap_content" 
+			android:minWidth="220dip"
+			android:textSize="18px"
+            android:textColor="@color/gris"
+			/>
+		<TextView android:id="@+id/v_cotizacion"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textSize="18px"
+            android:textColor="@color/gris_claro"
+			/>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:paddingBottom="5px"
+		android:paddingLeft="10px"
+		android:paddingRight="10px">
+		<TextView android:text="HORA COTIZACION" 
+			android:layout_width="220dip"
+			android:layout_height="wrap_content" 
+			android:minWidth="220dip"
+			android:textSize="18px"
+            android:textColor="@color/gris"
+			/>
+		<TextView android:id="@+id/v_hora_cotizacion"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textSize="18px"
+            android:textColor="@color/gris_claro"
+			 />
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:paddingBottom="5px"
+		android:paddingLeft="10px"
+		android:paddingRight="10px">
+		<TextView android:text="CIERRE" 
+			android:layout_width="220dip"
+			android:layout_height="wrap_content" 
+			android:minWidth="220dip"
+			android:textSize="18px"
+            android:textColor="@color/gris"
+			/>
+		<TextView android:id="@+id/v_cierre_ant"
+			android:layout_width="wrap_content" 
+			android:textSize="18px"
+            android:textColor="@color/gris_claro"
+            android:layout_height="wrap_content"/>
+	</LinearLayout>
+ 	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:paddingBottom="5px"
+		android:paddingLeft="10px"
+		android:paddingRight="10px">
+		<TextView android:text="APERTURA" 
+			android:layout_width="220dip"
+			android:layout_height="wrap_content" 
+			android:minWidth="220dip"
+			android:textSize="18px"
+            android:textColor="@color/gris"
+			/>
+		<TextView android:id="@+id/v_apertura" 
+			android:textSize="18px"
+            android:textColor="@color/gris_claro"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:paddingBottom="5px"
+		android:paddingLeft="10px"
+		android:paddingRight="10px">
+		<TextView android:text="OFERTA" 
+			android:layout_width="220dip"
+			android:layout_height="wrap_content" 
+			android:minWidth="220dip"
+			android:textSize="18px"
+            android:textColor="@color/gris"
+			/>
+		<TextView android:id="@+id/v_oferta" 
+		android:textSize="18px"
+            android:textColor="@color/gris_claro"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:paddingBottom="5px"
+		android:paddingLeft="10px"
+		android:paddingRight="10px">
+		<TextView android:text="DEMANDA" 
+			android:layout_width="220dip"
+			android:layout_height="wrap_content" 
+			android:minWidth="220dip"
+			android:textSize="18px"
+            android:textColor="@color/gris"
+			/>
+		<TextView android:id="@+id/v_demanda" 
+		android:textSize="18px"
+            android:textColor="@color/gris_claro"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:paddingBottom="5px"
+		android:paddingLeft="10px"
+		android:paddingRight="10px">
+		<TextView android:text="RANGO DIARIO" 
+			android:layout_width="220dip"
+			android:layout_height="wrap_content" 
+			android:minWidth="220dip"
+			android:textSize="18px"
+            android:textColor="@color/gris"
+			/>
+		<TextView android:id="@+id/v_rango_diario" 
+		android:textSize="18px"
+            android:textColor="@color/gris_claro"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			/>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:paddingBottom="5px"
+		android:paddingLeft="10px"
+		android:paddingRight="10px">
+		<TextView android:text="RANGO ANUAL" 
+			android:layout_width="220dip"
+			android:layout_height="wrap_content" 
+			android:minWidth="220dip"
+			android:textSize="18px"
+            android:textColor="@color/gris"
+			/>
+		<TextView android:id="@+id/v_rango52sem"
+			android:layout_width="wrap_content" 
+			android:textSize="18px"
+            android:textColor="@color/gris_claro"
+            android:layout_height="wrap_content"/>
+ 	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:paddingBottom="5px"
+		android:paddingLeft="10px"
+		android:paddingRight="10px">
+		<TextView android:text="VOLUMEN" 
+			android:layout_width="220dip"
+			android:layout_height="wrap_content" 
+			android:minWidth="220dip"
+			android:textSize="18px"
+            android:textColor="@color/gris"
+			/>
+		<TextView android:id="@+id/v_vol" 
+		android:textSize="18px"
+            android:textColor="@color/gris_claro"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:paddingBottom="5px"
+		android:paddingLeft="10px"
+		android:paddingRight="10px">
+		<TextView android:text="VOLUMEN MEDIO" 
+			android:layout_width="220dip"
+			android:layout_height="wrap_content" 
+			android:minWidth="220dip"
+			android:textSize="18px"
+            android:textColor="@color/gris"
+			/>
+		<TextView android:id="@+id/v_vol3mes" 
+		android:textSize="18px"
+            android:textColor="@color/gris_claro"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:paddingBottom="5px"
+		android:paddingLeft="10px"
+		android:paddingRight="10px">
+		<TextView android:text="GANANCIA POR ACCION" 
+			android:layout_width="220dip"
+			android:layout_height="wrap_content" 
+			android:minWidth="220dip"
+			android:textSize="18px"
+            android:textColor="@color/gris"
+			/>
+		<TextView android:id="@+id/v_ganancia_x_accion" 
+		android:textSize="18px"
+            android:textColor="@color/gris_claro"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			/>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:paddingBottom="5px"
+		android:paddingLeft="10px"
+		android:paddingRight="10px">
+		<TextView android:text="RENDIMIENTO" 
+			android:layout_width="220dip"
+			android:layout_height="wrap_content" 
+			android:minWidth="220dip"
+			android:textSize="18px"
+            android:textColor="@color/gris"
+			/>
+		<TextView android:id="@+id/v_rendimiento"
+			android:layout_width="wrap_content" 
+			android:textSize="18px"
+            android:textColor="@color/gris_claro"
+            android:layout_height="wrap_content"
+			/>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:paddingBottom="5px"
+		android:paddingLeft="10px"
+		android:paddingRight="10px">
+		<TextView android:text="RECOMENDACION" 
+			android:layout_width="220dip"
+			android:layout_height="wrap_content" 
+			android:minWidth="220dip"
+			android:textSize="18px"
+            android:textColor="@color/gris"
+			/>
+		<TextView android:id="@+id/v_recomend_promedio"
+			android:layout_width="wrap_content" 
+			android:textSize="18px"
+            android:textColor="@color/gris_claro"
+            android:layout_height="wrap_content"
+			/>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent">
+		<ImageView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:adjustViewBounds="true"
+			android:id="@+id/grafica_detalle" />
+	</LinearLayout>
+</LinearLayout>
+</ScrollView>

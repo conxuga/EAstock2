@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+        android:label="@string/search_label"
+        android:hint="@string/search_hint"
+        android:searchSettingsDescription="@string/settings_description"
+        android:searchSuggestAuthority="es.android.eabolsa.searchabletick.TickerProvider"
+        android:searchSuggestIntentAction="android.intent.action.VIEW"
+        android:searchSuggestIntentData="content://es.android.eabolsa.searchabletick.TickerProvider/dictionary"
+        android:searchSuggestSelection=" ?"
+        android:searchSuggestThreshold="1"
+        android:includeInGlobalSearch="true"
+        >
+ </searchable>

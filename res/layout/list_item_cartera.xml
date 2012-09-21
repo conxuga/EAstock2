@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"   >
+	<TableLayout android:id="@+id/tableLayout1"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:background="@color/blanco"
+		android:paddingTop="4dp" 
+		android:paddingBottom="4dp" >
+		<TableRow android:id="@+id/tableRow1" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+			<TextView  
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:id="@+id/cartera_nombre" 
+				android:paddingLeft="4dp"
+				android:textSize="18dp" 
+				android:textColor="@color/gris"
+				android:width="110dp" />
+			<TextView  
+				android:layout_height="wrap_content"
+				android:id="@+id/cartera_valor" 
+				android:layout_width="wrap_content"
+				android:textSize="18dp" 
+				android:textColor="@color/gris_claro"
+				android:width="75dp"
+				android:textStyle="bold"/>
+			<TextView  
+				android:layout_height="wrap_content"
+				android:id="@+id/cartera_cambio"
+				android:layout_width="wrap_content"
+				android:textSize="18dp" 
+				android:width="150dp"/>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow2" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView  android:id="@+id/cartera_empresa"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:paddingLeft="4dp"
+				android:textSize="10dp" 
+				android:textColor="@color/gris_claro" />
+		</TableRow>
+	</TableLayout>
+</LinearLayout>

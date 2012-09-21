@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<resources>
+
+    <!-- The name of the application. -->
+    <string name="app_name">EAbolsa</string>
+
+    <!-- The label for use as a searchable item -->
+    <string name="search_label">Tickers</string>
+
+    <!-- The hint text that appears in the search box. -->
+    <string name="search_hint">Buscar</string>
+
+    <!-- The menu entry that invokes search. -->
+    <string name="menu_search">Añadir</string>
+    
+    <!-- The menu entry to order. -->
+    <string name="menu_order">Ordenar</string>
+
+	<!-- The menu entry to refresh. -->
+    <string name="menu_refresh">Refrescar</string>
+    
+    <!-- The description that will show up in the search settings for this source.  -->
+    <string name="settings_description">Empresas</string>
+
+    <!-- General instructions in the main activity. -->
+    <string name="search_instructions"> eabolsa! </string>
+
+    <!-- Shown above search results when we receive a search request. -->
+    <plurals name="search_results">
+      <item quantity="one">%1$d resultado para \"%2$s\": </item>
+      <item quantity="other">%1$d resultados para \"%2$s\": </item>
+    </plurals>
+
+    <!-- Search failure message. -->
+    <string name="no_results">No hay resultados para \"%s\"</string>
+    
+    <string name="about_tab">Acerca de..</string>
+
+
+</resources>

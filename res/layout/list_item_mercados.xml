@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent"
+	android:background="#ffffff" 
+	android:paddingTop="4dp" 
+	android:paddingBottom="4dp"	>
+	<TextView
+	    android:id="@+id/LblMercado"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:paddingLeft="4dp"
+		android:textSize="18dp" 
+		android:textColor="@color/gris"
+		android:layout_gravity="center"		/>
+	<TextView 
+	    android:id="@+id/LblValor"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:textStyle="bold" 
+		android:textSize="18dp" 
+		android:textColor="@color/gris_claro" 
+		android:layout_gravity="center"/>
+		
+	<TextView 
+	    android:id="@+id/LblCambio"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:textSize="18dp" 
+		android:layout_gravity="center"/>
+	
+	<ImageView android:layout_height="wrap_content"
+		android:layout_width="fill_parent" 
+		android:id="@+id/grafica" 
+		android:adjustViewBounds="true"/>
+</LinearLayout>
+
